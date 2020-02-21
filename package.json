@@ -2,9 +2,13 @@
   "name": "hello-world",
   "version": "1.0.0",
   "description": "hello world node server application",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./node_modules/pm2/bin/pm2 start server.js --log ../logs/app.log",
+    "stop": "node ./node_modules/pm2/bin/pm2 stop all"
+  },
+  "dependencies": {
+    "pm2": "^4.2.0"
   },
   "repository": {
     "type": "git",
