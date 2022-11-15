@@ -8,7 +8,7 @@
     "stop": "node ./node_modules/pm2/bin/pm2 stop all"
   },
   "dependencies": {
-    "pm2": "^4.5.6"
+    "pm2": "^5.2.2"
   },
   "repository": {
     "type": "git",
